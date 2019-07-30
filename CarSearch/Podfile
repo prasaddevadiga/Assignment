@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+target 'CarSearch' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'SDWebImage'
+
+  target 'CarSearchTests' do
+    inherit! :search_paths
+  end
+
+  target 'CarSearchUITests' do
+    inherit! :search_paths
+  end
+
+end
